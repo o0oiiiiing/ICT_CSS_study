@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#p1 {
+	border: 1px solid red;
+	width: 100px;
+	height: 100px;
+}
+
+#s1 {
+	border: 1px solid blue;
+	width: 100px;
+	height: 100px;
+}
+
+article {
+	border: 1px solid red;
+}
+
+article:nth-of-type(1) {
+	width: 100px;
+	height: 100px;
+}
+
+/* 높이는 동작하지 않는다. */
+article:nth-of-type(2) {
+	width: 20%;
+	height: 20%;
+}
+
+article:nth-of-type(3) {
+	width: 10vw;
+	height: 10vw;
+}
+
+article:nth-of-type(4) {
+	width: 10vh;
+	height: 10vh;
+}
+
+.c1 article {
+	width: 50px;
+	height: 30px;
+	border: 1px solid red;
+}
+
+.c1>article:nth-of-type(1) {
+	margin: 20px; /* 상하좌우 */
+	padding: 10px;
+}
+
+.c1>article:nth-of-type(2) {
+	margin: 20px 50px; /* 상하 좌우 */
+	padding: 10px 20px;
+}
+
+.c1>article:nth-of-type(3) {
+	margin: 20px auto; /* 상하 중앙정렬 */
+	padding: 10px;
+}
+
+.c1>article:nth-of-type(4) {
+	margin: 20px auto 40px; /* 상 중앙정렬 하 */
+	padding: 10px;
+}
+
+.c1>article:nth-of-type(5) {
+	margin: 0px 10px 20px 30px; /* 상 좌우 하 */
+	padding: 10px
+}
+
+.c1>article:nth-of-type(6) {
+	margin-left: 20px; /* 상 우 하 좌 */
+	padding: 10px;
+}
+
+.c1>article:nth-of-type(7) {
+	margin-right: 20px;
+}
+
+.c1>article:nth-of-type(8) {
+	margin-top: 20px;
+}
+
+.c1>article:nth-of-type(9) {
+	margin-bottom: 20px;
+}
+
+#mybox-1 {
+	padding: 0px;
+	width: 98px;
+	height: 98px;
+	border: 1px solid red;
+}
+
+#mybox-2 {
+	padding: 30px;
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	border: 1px solid red;
+}
+</style>
+</head>
+<body>
+	<!-- 
+1. width, height => 블록레벨에서만 사용, 인라인은 사용 못함
+				 => px : 절대크기 px 사용
+				 => % : 부모 태그 기준으로, 높이는 동작하지 않는다.
+				 	ex) 만약에 width=800px, height=1000px이면 1vw = 8px, 1vh=10px
+				 => vw : 웹 브라우저의 너비를 기준 (백분율로 지정) 너비/100
+				 => vh : 웹 브라우저의 높이를 기준 (백분율로 지정) 높이/100
+2. margin : 바깥쪽 여백
+3. padding : 안쪽 여백
+4. box-sizing : content-box : 텍스트 크기를 지정하므로 padding을 주면 크기가 커진다
+				border-box : padding, border 크기까지 포함된 영역을 지정
+		
+
+
+ -->
+	<p id="p1">블록레벨 입니다.</p>
+	<span id="s1">인라인 요소 입니다.</span>
+	<hr>
+
+	<div>
+		<article>100px</article>
+		<article>20%</article>
+		<article>10vw</article>
+		<article>10vh</article>
+	</div>
+	<hr>
+	<img src="../images/img01.png">
+	<div class="c1">
+		<article>box1</article>
+		<article>box2</article>
+		<article>box3</article>
+		<article>box4</article>
+		<article>box5</article>
+		<article>box6</article>
+		<article>box7</article>
+		<article>box8</article>
+		<article>box9</article>
+	</div>
+	<hr>
+
+	<div id="mybox-1">My Box1</div>
+	<div id="mybox-2">My Box2</div>
+
+</body>
+</html>

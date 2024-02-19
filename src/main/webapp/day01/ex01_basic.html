@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html 문서와 연결하기, 기본 문법</title>
+<link rel="stylesheet" href="day01.css">
+<style type="text/css">
+* {
+	border: 1px solid red;
+}
+
+p {
+	color: red;
+}
+
+#t {
+	background-color: orange
+}
+
+.a {
+	background-color: lightgray;
+	color: red;
+}
+</style>
+</head>
+<body>
+	<!-- 
+1. html + CSS 연결하기
+ 1) *인라인 스타일 : 태그에 직접 기술하기
+ 2) *스타일 태그 : 스타일 시트를 위한 태그를 추가하여 기술
+ 3) **link 태그 : CSS 파일을 외부에서 만들어서 연결하기
+ 
+2. 기본 문법
+	선택자{ 속성명 : 속성값 ;)
+	
+	선택자 : 
+		1) * → 전체선택자 - 모든 요소 선택
+		2) 태그 → 요소(element) 선택자 - 해당 요소 = element = 태그 들을 모두 선택
+		3) 클래스 → class 속성을 가진 요소 모두 선택 (css → .(점))
+		4) 아이디 → id(고유한)속성을 가진 요소 (css → #)
+		
+	** 주의사항) 선택자가 겹치는 경우, 기본적으로 나중에 작성된 스타일이 적용된다.
+	   진행순서) CSS 파일 → 스타일 태그 → 인라인
+	   선택지 우선 순위 : 아이디 -> 클래스 -> 태그
+	   한 태그에 아이디와 클래스가 같이 적용되면 아이디가 우선 순위가 높다.
+ -->
+	<div>
+		<h1 class="a" id="t">HELLO</h1>
+		<p class="a">Lorem ipsum dolor sit amet.</p>
+		<a href="#" class="a">link</a>
+		<p style="color: green">Lorem ipsum dolor sit amet.</p>
+		<a href="#">link</a>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<a href="#">link</a>
+	</div>
+
+</body>
+</html>

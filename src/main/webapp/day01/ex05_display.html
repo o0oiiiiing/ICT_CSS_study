@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.p1 {
+	border: 1px solid red;
+	display: none;
+}
+
+.s1 {
+	border: 1px dashed blue;
+	display: inline-block;
+}
+
+div>p {
+	border: 1px solid red;
+	height: 100px;
+}
+
+div strong, em {
+	border: 1px solid blue;
+	height: 100px;
+	display: block;
+}
+</style>
+</head>
+<body>
+	<!-- 
+display : inline : 인라인으로 처리
+		  block : 블록 레벨로 처리
+		  inline-block : 배치는 인라인 처리, 블록레벨 요소의 속성을 추가 할 수 있다. (width, height)
+		  none : 표시하지 않는다.
+ -->
+
+	<p class="p1">여기는 블록레벨</p>
+	<span class="s1">여기는 인라인</span>
+	<hr>
+
+	<div>
+		<p>블록 요소 태그는 자동 줄 바꿈 됩니다.</p>
+		<p>
+			<span> <strong>인라인 요소 태그</strong>들은 <em>좌우로</em> 배치됩니다.
+			</span>
+		</p>
+	</div>
+</body>
+</html>

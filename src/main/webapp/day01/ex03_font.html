@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap"
+	rel="stylesheet">
+<style>
+/* 원래 크기와 같으므로 변화가 없음 */
+/* h1 {
+	font-size: 32px;
+}
+
+p {
+	font-size: 16px;
+} */
+
+/* rem은 html 태그 기준 (16px) */
+h1 {
+	font-size: 2rem; /* (2*16) */
+}
+
+p {
+	font-size: 1rem;
+}
+
+#a {
+	font-size: 1.2rem;
+}
+
+span {
+	font-size: 3em; /* (16*5) */
+}
+
+ul li {
+	font-size: 40px;
+}
+
+/* ul li:nth-of-type(1) {
+	font-family: "돋움";
+}
+
+ul li:nth-of-type(2) {
+	font-family: "굴림";
+}
+
+ul li:nth-of-type(3) {
+	font-family: serif;
+}
+
+ul li:nth-of-type(4) {
+	font-family: arial;
+} */
+
+ul li {
+	font-family: "Moirai One", system-ui;
+}
+</style>
+</head>
+<body>
+	<!-- 
+글자 스타일 : font-style
+글자 굵기 : font-weight: bold
+글자 크기 : font-size - px - 픽셀, 절대크기 (h1 → 32px, p → 16px)
+					  rem - 최상위 부모인 html 태그를 기준으로 폰트크기를 설정
+					  em - 부모 요소를 기준으로 폰트 크기를 설정
+
+글꼴 : font-family
+	  서버 컴퓨터에 있는 글꼴이 아니라 각 클라이언트에 있는 글꼴을 사용
+	  즉, 서버에 글꼴이 있어도 클라이언트에 없으면 기본글꼴로 나온다.
+	  그래서 요즘은 webfont를 사용한다.
+	  1. 사이트로 이동하기: https://fonts.google.com/
+줄간격 : line-height // font-size : 텍스트 자체의 높이
+	   픽셀값 : 40px;
+	   실수값 : 폰트크기의 배율 ex) 1.5 (폰트 크기의 1.5배)
+텍스트 정렬 : text-align - left, center, right, justify(양쪽 정렬 => 마지막 줄은 제외)
+ -->
+	<h1>HELLO</h1>
+	<h2 id="a">HELLO</h2>
+	<h2>HELLO</h2>
+	<p>
+		안녕하세요 <span>룰루랄라~~~</span>
+	</p>
+	<hr>
+
+	<ul>
+		<li>글자 서체</li>
+		<li>글자 서체</li>
+		<li>FONT FAMILY</li>
+		<li>FONT FAMILY</li>
+	</ul>
+
+</body>
+</html>

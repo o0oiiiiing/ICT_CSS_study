@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+p {
+	background-color: red;
+}
+
+span {
+	background-color: blue;
+}
+
+#s1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/pattern.png");
+}
+
+#s2 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/pattern.png");
+	background-repeat: repeat;
+}
+
+#s3 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/pattern.png");
+	background-repeat: no-repeat;
+}
+
+#s4 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/pattern.png");
+	background-repeat: repeat-x;
+}
+
+#s5 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/pattern.png");
+	background-repeat: repeat-y;
+}
+
+#s6 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/pattern.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#s7 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/pattern.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;;
+}
+
+#s8 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/pattern.png");
+	background-repeat: no-repeat;
+	background-position: 20px 60px; /* 왼쪽 : 20px, 위쪽 : 60px */
+}
+
+#s9 {
+	width: 300px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/rose.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+#s10 {
+	width: 300px;
+	height: 200px;
+	border: 1px solid #000;
+	background-image: url("../images/rose.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+</style>
+</head>
+<body>
+	<p>블록레벨 입니다.</p>
+	<span>인라인레벨 입니다.</span>
+	<hr>
+
+	<!-- 
+배경 그림
+background-image: url("이미지 위치") => 바둑판식
+background-repeat: 
+ -->
+
+	<section id="s1"></section>
+	<section id="s2"></section>
+	<section id="s3"></section>
+	<section id="s4"></section>
+	<section id="s5"></section>
+	<section id="s6"></section>
+	<section id="s7"></section>
+	<section id="s8"></section>
+	<section id="s9"></section>
+	<section id="s10"></section>
+</body>
+</html>
