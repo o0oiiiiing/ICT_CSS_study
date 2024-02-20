@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+#box1, #box2, #box3, #box4 {
+	width: 250px;
+	height: 100px;
+	border: 1px solid gray;
+}
+
+#box1 {
+	overflow: visible;
+}
+
+#box2 {
+	overflow: hidden;
+}
+
+#box3 {
+	overflow: scroll;
+}
+
+#box4 {
+	overflow: auto;
+}
+</style>
+</head>
+<body>
+	<!-- 
+overflow : 너무 커서 영역에 맞지 않는 내용을 제어할 때 사용
+- visible : 기본, 내용은 요소상자 외부에서도 보인다.
+- hidden : 넘치는 내용이 보이지 않는다.
+- scroll : 넘치면 스크롤이 추가된다.
+- auto : 필요할 때 스크롤이 추가된다.
+ -->
+
+	<h2>CSS Overflow</h2>
+	<p>CSS Overflow Test CSS Overflow Test CSS Overflow Test CSS
+		Overflow Test CSS Overflow Test CSS Overflow Test</p>
+	<div id="box1">CSS Overflow Test CSS Overflow Test CSS Overflow
+		Test CSS Overflow Test CSS Overflow Test CSS Overflow Test CSS
+		Overflow Test CSS Overflow Test CSS Overflow Test CSS Overflow Test
+		CSS Overflow Test CSS Overflow Test</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="box2">CSS Overflow Test CSS Overflow Test CSS Overflow
+		Test CSS Overflow Test CSS Overflow Test CSS Overflow Test CSS
+		Overflow Test CSS Overflow Test CSS Overflow Test CSS Overflow Test
+		CSS Overflow Test CSS Overflow Test</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="box3">CSS Overflow Test CSS Overflow Test CSS Overflow
+		Test CSS Overflow Test CSS Overflow Test CSS Overflow Test CSS
+		Overflow Test CSS Overflow Test CSS Overflow Test CSS Overflow Test
+		CSS Overflow Test CSS Overflow Test</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="box4">CSS Overflow Test CSS Overflow Test CSS Overflow
+		Test CSS Overflow Test CSS Overflow Test CSS Overflow Test CSS
+		Overflow Test CSS Overflow Test CSS Overflow Test CSS Overflow Test
+		CSS Overflow Test CSS Overflow Test</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>

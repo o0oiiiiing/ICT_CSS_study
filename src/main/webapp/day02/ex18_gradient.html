@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 50px;
+	border: 1px solid #000;
+}
+/* 
+linear-gradient(방향, 색상1, 색상2); 직선 모양의 그레이디언트
+radial-gradient(색상1, 색상2); 원형 모양의 그레이디언트
+ */
+div:nth-of-type(1) {
+	background: linear-gradient(to bottom, blue, red, yellow, maroon);
+} /* 아래방향 */
+
+div:nth-of-type(2) {
+	background: linear-gradient(to top, blue, red);
+} /* 위쪽방향 */
+
+div:nth-of-type(3) {
+	background: linear-gradient(to right, blue, red);
+} /* 오른쪽방향 */
+
+div:nth-of-type(4) {
+	background: linear-gradient(to left, blue, red);
+} /* 왼쪽방향 */
+
+div:nth-of-type(5) {
+	background: linear-gradient(45deg, blue, red);
+} /* 45도방향 */
+</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

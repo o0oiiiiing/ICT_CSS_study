@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	width: 650px;
+	margin: 100px auto;
+	border: 1px solid #ccc;
+	padding: 10px
+}
+
+div img {
+	width: 200px;
+	margin: 6px;
+}
+
+/* 값이 커질수록 blur 효과가 커짐 */
+div img:nth-of-type(2) {
+	filter: blur(3px);
+}
+
+/* 1보다 작아지면 어두워지고 커지면 밝아짐 */
+div img:nth-of-type(3) {
+	filter: brightness(0.5);
+}
+
+/* 100%에서 작아지면 명암 대비 효과 감소, 커지면 증가 */
+div img:nth-of-type(4) {
+	filter: contrast(150%);
+}
+
+/* 100%에 가까울수록 흑백으로 전환 */
+div img:nth-of-type(5) {
+	filter: grayscale(100%);
+}
+
+/* 0deg는 원래 이미지 색상. 0~365deg까지 색상 변경 가능 */
+div img:nth-of-type(6) {
+	filter: hue-rotate(180deg);
+}
+
+/* 100%에 가까울수록 색이 반대로 변환됨 */
+div img:nth-of-type(7) {
+	filter: invert(100%);
+}
+
+/* 0에 가까울수록 채도가 낮아짐 */
+div img:nth-of-type(8) {
+	filter: saturate(0.5);
+}
+
+/* 100%에 가까울수록 갈색 톤으로 변경됨 */
+div img:nth-of-type(9) {
+	filter: sepia(100%);
+}
+</style>
+</head>
+<body>
+
+	<div>
+		<img src="../images/rose.jpg" alt="장미"> <img
+			src="../images/rose.jpg" alt="장미"> <img
+			src="../images/rose.jpg" alt="장미"> <img
+			src="../images/rose.jpg" alt="장미"> <img
+			src="../images/rose.jpg" alt="장미"> <img
+			src="../images/rose.jpg" alt="장미"> <img
+			src="../images/rose.jpg" alt="장미"> <img
+			src="../images/rose.jpg" alt="장미"> <img
+			src="../images/rose.jpg" alt="장미">
+	</div>
+
+</body>
+</html>

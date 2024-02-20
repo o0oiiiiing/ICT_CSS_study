@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	width: 200px;
+	height: 200px;
+	background-color: lightyellow;
+	border: 1px solid black;
+}
+
+#a {
+	position: relative;
+}
+
+.abs {
+	width: 100px;
+	height: 100px;
+	background-color: tomato;
+	/* 만약에 가까운 position이 없으면 body를 기준으로 한다. */
+	position: absolute;
+	top: 100px;
+}
+</style>
+</head>
+<body>
+	<h1>position: absolute</h1>
+	<div id="a"></div>
+	<div id="b">
+		<div class="abs"></div>
+		<p>한국 ICT 인재개발원</p>
+	</div>
+
+</body>
+</html>
