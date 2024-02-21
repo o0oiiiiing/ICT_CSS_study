@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>화면크기마다 이미지 변경하기</h2>
+	<p>600px과 1500px일 때 변경하기</p>
+	<picture>
+	<source srcset="../images/bear.jpg" media="(max-width: 600px)">
+	<source srcset="../images/car2.jpg" media="(max-width: 1000px)">
+	<img src="../images/car1.jpg" style="max-width: 50%"> </picture>
+</body>
+</html>

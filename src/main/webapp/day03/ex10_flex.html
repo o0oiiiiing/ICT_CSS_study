@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+section {
+	width: 100%;
+	background: lightblue;
+	/* 부모 요소에만 display: flex;를 지정하고 
+	자식요소에 크기를 따로 입력하지 않으면 자식요소는 display: inline-flex;가 된다.
+	그래서 요소영역이 텍스트의 크기만큼 설정된다. */
+	display: flex;
+}
+
+section article {
+	background: skyblue;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	font-size: 50px;
+	color: #fff;
+	display: flex;
+}
+
+/* flex-grow : 여백 비율 가중치 */
+section article:nth-of-type(1) {
+	flex-grow: 1;
+}
+
+section article:nth-of-type(2) {
+	flex-grow: 2;
+}
+
+section article:nth-of-type(3) {
+	flex-grow: 3;
+}
+</style>
+</head>
+<body>
+
+	<section>
+		<article>FLEX GROW</article>
+		<article>FLEX GROW</article>
+		<article>FLEX GROW</article>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	background: lightcyan;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+	border: 10px solid blue;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row wrap;
+	/* justify-content: flex-start; 시작 */
+	/* justify-content: flex-end; 끝 */
+	/* justify-content: center; 가운데 */
+	/* justify-content: space-between; 자식요소의 좌우 사이 여백만 균일하게 배분 */
+	/* justify-content: space-around; 자식요소의 여백을 균일하게 배분 */
+	/* justify-content: space-evenly; 자식 요소들의 여백을 양끝까지 균일하게 배분 */
+	justify-content: space-evenly;
+	align-items: center; /* 자식요소 가운데 정렬 (상하) */
+}
+
+section article {
+	width: 100px;
+	height: 100px;
+	background: aqua;
+	border: 1px solid #000;
+}
+</style>
+</head>
+<body>
+	<main>
+		<section>
+			<article>1</article>
+			<article>2</article>
+			<article>3</article>
+			<article>4</article>
+			<article>5</article>
+		</section>
+	</main>
+</body>
+</html>

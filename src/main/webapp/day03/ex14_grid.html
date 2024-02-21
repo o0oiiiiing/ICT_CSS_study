@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	display: grid; /* 그리드 컨테이너 지정 */
+	/* grid-template-columns: 200px 200px 200px; */ /* 너비 200px 3개 */
+	/* grid-template-columns: 1fr 1fr 1fr; */ /* 전체화면 너비가 같은 것 3개 */
+	/* grid-template-columns: 1fr 3fr 1fr; */ /* 전체화면 너비 중 1:3:1 */
+	grid-template-columns: repeat(3, 1fr); /* 1fr 1fr 1fr */
+	grid-template-rows: 200px; /* 줄 높이 200px */
+	grid-gap: 20px 50px; /* 줄간격 20px, 칸 간격 50px */
+}
+
+.items {
+	padding: 10px;
+	background-color: #eee;
+}
+
+.items:nth-of-type(odd) {
+	background-color: #bbb;
+}
+</style>
+</head>
+<body>
+	<!-- 
+부모 컨테이너에게 display: grid 또는 inline-grid 라고 지정
+grid : 자식박스(항목)을 블록, inline-grid : 자식박스(항목)을 인라인
+자식 항목들을 grid cell이라고 한다.
+	가로 지정 - grid-template-columns
+	세로 지정 - grid-template-rows
+	사용자 지정 - grid-template-areas
+	
+grid-gap : grid-column-gap, grid-low-gap
+
+그리드 영역
+grid-column-start;
+grid-column-end;
+grid-row-start;
+grid-row-end;
+grid-area;
+ -->
+	<div id="wrapper">
+		<div class="items">Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet
+			consectetur adipisicing elit.</div>
+		<div class="items">Lorem ipsum dolor, sit amet consectetur
+			adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing
+			elit</div>
+		<div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor,
+			sit amet consectetur adipisicing elit</div>
+		<div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit
+			amet consectetur adipisicing elit</div>
+		<div class="items">Lorem, ipsum dolor.</div>
+	</div>
+</body>
+</html>
