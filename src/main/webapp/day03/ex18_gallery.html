@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>grid-image</title>
 <style type="text/css">
 * {
@@ -15,17 +16,18 @@ body {
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-	grid-template-rows: 200px;
-	grid-template-areas: "img1 img1 img1" "img2 img3 img3" "img2 img4 img5"
-		"img6 img7 img5";
-	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 200px);
+	grid-template-areas: "img1 img1 img1" "img2 img3 img3" "img2 img4 img6"
+		"img5 img7 img6";
+	grid-gap: 10px;
+	margin: 10px;
 }
 
 .container>img {
-	max-width: 100%;
-	object-fit: fill;
-	height: 200px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .image1 {
