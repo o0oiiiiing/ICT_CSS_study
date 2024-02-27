@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* 수평메뉴 */
+.navi {
+	width: 960px;
+	height: 60px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ccc;
+}
+
+.navi ul {
+	list-style-type: none;
+	padding: 10px 0px;
+}
+
+.navi ul li {
+	display: inline-block;
+	width: 150px;
+	padding: 10px;
+}
+
+.navi a:link, .navi a:visited {
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.navi a:hover {
+	background-color: black;
+	color: white;
+}
+
+.contents {
+	margin: 30px auto;
+	width: 400px;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#signup {
+	width: 400px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#signup fieldset {
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+
+#signup legend {
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+
+#signup ul li {
+	line-height: 30px;
+	list-style-type: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+
+#signup fieldset:nth-of-type(1) label {
+	float: left;
+	font-size: 13px;
+	width: 60px;
+}
+
+#signup input[type=text] {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+	width: 200px;
+}
+
+#signup input[type=text]:hover {
+	border-color: lightsalmon;
+}
+
+/* input 요소에 checked 속성이 추가되었을 때 label 요소의 스타일 변경 */
+/* +는 인접 선택자 앞에서 지정한 요소의 바로 다음에 위치하는 형제 요소만 선택 */
+#signup input:checked+label {
+	color: lightsalmon;
+	font-weight: bold;
+}
+
+button{
+	border: 1px solid black;
+	border-radius: 20px;
+	display: block;
+	font: 16px 맑은고딕, 굴림, 돋움;
+	margin: 0 auto;
+	padding: 5px 20px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<nav class="navi">
+			<ul>
+				<li><a href="ex01.html#intro">이용 안내</a></li>
+				<li><a href="ex01.html#room">객실 소개</a></li>
+				<li><a href="ex01.html#reservation">예약 방법 및 요금</a></li>
+				<li><a href="ex02.html">예약하기</a></li>
+			</ul>
+		</nav>
+		<form id="signup">
+			<fieldset>
+				<legend>개인 정보</legend>
+				<ul>
+					<li><label for="u_name">이름</label> <input type="text"
+						id="u_name" name="u_name" required></li>
+					<li><label for="u_tel">연락처</label> <input type="text"
+						id="u_tel" name="u_tel" required></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>객실 형태</legend>
+				<ul>
+					<li><input type="radio" id="basic" name="room"> <label
+						for="basic">기본형(최대 2인)</label></li>
+					<li><input type="radio" id="family" name="room"> <label
+						for="family">가족형(최대 8인)</label></li>
+				</ul>
+			</fieldset>
+			<button type="submit">제출</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+.header {
+	/* 위에 고정 - 스크롤 되었을 때 계속 보이게 하자.*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 0 3px black;
+	z-index: 5;
+}
+
+.header_wrapper {
+	display: flex;
+	/* 기본축 정렬 */
+	justify-content: space-between;
+	/* 교차축 정렬 */
+	align-items: center;
+	height: 60px;
+	padding: 0px 16px;
+}
+
+.header_start {
+	/* 글자 세로 정렬 */
+	height: 40px;
+	line-height: 40px;
+}
+
+.header_hamburger {
+	border: none;
+	/* transparent(투명) */
+	background-color: transparent;
+	font-size: 1.5rem;
+}
+
+.header_title {
+	font-size: 1.2rem;
+	margin-left: 6px;
+}
+
+.header_center {
+	width: 50%;
+}
+
+.header_form {
+	display: flex;
+	max-width: 100%;
+}
+
+.header_input_text {
+	width: calc(100% - 60px);
+	height: 40px;
+	margin: 0px;
+	border: 1px solid #8f8f8f;
+	border-right: none;
+	border-radius: 5px 0 0 5px;
+}
+
+.header_input_button {
+	width: 60px;
+	height: 40px;
+	margin: 0px;
+	border: 1px solid #8f8f8f;
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+}
+
+.header_end {
+	display: flex;
+}
+
+/* 햄버거 버튼 참조 */
+.header_search {
+	margin-right: 5px;
+	border: none;
+	background-color: transparent;
+	font-size: 1.5rem;
+	display: none;
+}
+
+.header_profile {
+	width: 40px;
+	height: 40px;
+	/* border: 1px solid #eaeaea; */
+	/* border-radius: 50%; */
+	/* background-color: lightpink; */
+	background-image: url(profile-m.png);
+	background-size: 40px 40px;
+}
+
+/* 800px 이하이면 로고가 없어진다. */
+@media screen and (max-width: 800px) {
+	.header_title {
+		display: none;
+	}
+}
+
+/* 460px 이하이면 로고가 없어진다. */
+@media screen and (max-width: 500px) {
+	.header_center{
+		display: none;
+	}
+	.header_search{
+		display: block;
+	}
+}
