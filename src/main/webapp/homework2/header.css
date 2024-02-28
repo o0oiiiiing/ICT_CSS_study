@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-* {
-	box-sizing: border-box;
-}
-
 .header {
 	/* 위에 고정 - 스크롤 되었을 때 계속 보이게 하자.*/
 	position: fixed;
@@ -100,7 +96,7 @@
 	}
 }
 
-/* 460px 이하이면 로고가 없어진다. */
+/* 500px 이하이면 로고가 없어진다. */
 @media screen and (max-width: 500px) {
 	.header_center{
 		display: none;

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+.thumbs_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 60px 0 0 200px;
+	padding: 20px 0 0 10px;
+}
+
+.thumbs_item {
+	/* 한 줄 4개 */
+	width: 25%;
+	margin: 0 0 15px 0;
+	padding: 0 10px;
+}
+
+.thumbs_img {
+	max-width: 100%;
+	margin: 0 0 10px 0;
+}
+
+.thumbs_profile {
+	width: 40px;
+	height: 40px;
+	background-image: url(profile-m.png);
+	background-size: 40px 40px;
+}
+
+.thumbs_info {
+	display: flex;
+}
+
+.thumbs_text {
+	padding-left: 10px;
+	color: gray;
+}
+
+.thumbs_title {
+	font-size: 1rem;
+	margin-bottom: 0.5em;
+}
+
+.thumbs_owner {
+	font-size: 0.8rem;
+	margin-bottom: 0.5em;
+}
+
+.thumbs_anal {
+	font-size: 0.7rem;
+}
+
+/* 1200px 이하 */
+@media screen and (max-width: 1200px) {
+	.thumbs_item {
+		width: 33%;
+	}
+}
+
+/* 800px 이하 */
+@media screen and (max-width: 800px) {
+	/* nav가 작아져서 (200px-50px) */
+	.thumbs_wrapper {
+		margin: 60px 0 0 60px;
+	}
+	.thumbs_item {
+		width: 50%;
+	}
+}
+
+/* 500px 이하이면 로고가 없어진다. */
+@media screen and (max-width: 500px) {
+	.thumbs_item {
+		width: 100%
+	}
+}
